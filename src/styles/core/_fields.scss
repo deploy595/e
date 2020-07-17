@@ -1,0 +1,68 @@
+%label {
+  color: rgba(0, 0, 0, 0.5);
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+  pointer-events: none;
+  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  transform-origin: top left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1;
+}
+
+%iwrapper {
+  font-size: 1.6rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+
+  > fieldset {
+    border-color: rgba(0, 0, 0, 0.23);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    transition: border-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, border-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    pointer-events: none;
+    padding-left: 8px;
+  }
+
+  input {
+    border-radius: .4rem;
+    padding: 1.2rem 1.6rem;
+    background: #fff;
+    color: rgba(0,0,0,.5);
+    font: inherit;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    display: block;
+    min-width: 0;
+    box-sizing: content-box;
+    -webkit-tap-highlight-color: transparent;
+    overflow: visible;
+    outline: 0;
+    transition: background-color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+  }
+
+  &.error {
+    > fieldset {
+      border-color: #f44336 !important;
+    }
+    input {
+      color: #f44336;
+      background-color: rgba(244, 67, 54, 0.1);
+    }
+  }
+}

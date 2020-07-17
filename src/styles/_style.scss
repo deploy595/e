@@ -1,0 +1,16 @@
+div.App {
+  width: 100rem;
+  margin: 0 auto;
+  padding: 1rem;
+
+  div.Form {
+    width: 98rem;
+    margin: 11rem auto;
+
+    div.Cards {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+  }
+}

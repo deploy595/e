@@ -1,0 +1,9 @@
+.snackbars {
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  > .snackbar {
+    max-width: 500px;
+    width: auto;
+  }
+}

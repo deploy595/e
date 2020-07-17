@@ -1,0 +1,88 @@
+@media (max-width: 1279px) {
+  div.App {
+    width: 90%;
+    max-width: 100rem;
+    padding: 0;
+
+    div.Form {
+      width: 100%;
+      margin: 10rem auto;
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  div.App {
+    div.Form {
+      width: 50rem;
+      margin: 2rem auto;
+
+      div.Cards {
+        .Card {
+          width: 100%;
+
+          &.is_front {
+            float: none;
+            margin-bottom: 0;
+          }
+
+          &.is_back {
+            position: relative;
+            margin: 2rem 0;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.5);
+          }
+        }
+      }
+    }
+  }
+  .snackbar {
+    left: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  html {
+    font-size: 38.75%;
+
+    div.App {
+      width: 100%;
+
+      img.logo {
+        margin-bottom: 4rem;
+      }
+
+      div.Form {
+        margin: 3.3rem auto;
+
+        div.Cards {
+
+          input {
+            font-size: 2.6rem;
+          }
+
+          .Card {
+            &.is_front {
+              .card_number {
+                margin-top: 3.5rem;
+              }
+
+              .month {
+                width: 6.5rem;
+              }
+
+              .year {
+                width: 6.5rem;
+              }
+            }
+            &.is_back {
+              .iwrapper {
+                width: 9.5rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
