@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pay</title>
+  <link href="vendor.css" rel="stylesheet"><link href="index.css" rel="stylesheet"></head>
+  <body>
+    <div class="App">
+      <div class="Form">
+        <img src="assets/logo.png" class="logo"/>
+        <form>
+          <div class="Cards">
+            <div class="Card is_front">
+              <img src="assets/bank.png" />
+              <div class="Field card_number">
+                <label>Номер карты</label>
+                <div class="iwrapper">
+                  <fieldset aria-hidden="true" style="padding-left: 8px"></fieldset>
+                  <input name="card_number" type="text" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19"/>
+                </div>
+              </div>
+              <div class="DateFields">
+                <label>Действует до</label>
+                <div class="iwrapper month">
+                  <fieldset aria-hidden="true"></fieldset>
+                  <input name="card_month" type="text" placeholder="MM" maxlength="2" />
+                </div>
+                <span class="delimiter">/</span>
+                <div class="iwrapper year">
+                  <fieldset aria-hidden="true"></fieldset>
+                  <input name="card_year" type="text" placeholder="YY" maxlength="2" />
+                </div>
+              </div>
+            </div>
+            <div class="Card is_back">
+              <div class="CvvField">
+                <label>CVC код*</label>
+                <div class="iwrapper">
+                  <fieldset aria-hidden="true"></fieldset>
+                  <input name="card_cvc" placeholder="CVC" type="password" maxlength="3" />
+                </div>
+              </div>
+              <div class="info">
+                * - 3 последние цифры на обратной стороне карты
+              </div>
+            </div>
+          </div>
+          <button class="Button disabled">
+            <div class="info">
+              <img src="assets/shield.svg" />
+              Безопасное соединение
+            </div>
+            Оплатить 100 &#8381;
+            <div class="progress">
+              <div role="progressbar">
+                <svg viewBox="22 22 44 44">
+                  <circle class='circle' cx="44" cy="44" r="20.2" fill="none" stroke-width="3.6"></circle>
+                </svg>
+              </div>
+            </div>
+          </button>
+        </form>
+      </div>
+    </div>
+  <script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="index.js"></script></body>
+</html>
